@@ -635,6 +635,8 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
   
 
 
+  
+
 
 
 
@@ -673,6 +675,11 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -758,34 +765,6 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
   
 
-  <script type="text/javascript">
-  var a_idx = 0;
-  jQuery(document).ready(function($) {
-  $("body").click(function(e) {
-  var a = new Array("is", "there", "a", "song", "that", "reminds", "you", "of" ,"me");
-  var $i = $("<span/>").text(a[a_idx]);
-  a_idx = (a_idx + 1) % a.length;
-  var x = e.pageX,
-  y = e.pageY;
-  $i.css({
-  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
-  "top": y - 20,
-  "left": x,
-  "position": "absolute",
-  "font-weight": "bold",
-  "color": "#ff6651"
-  });
-  $("body").append($i);
-  $i.animate({
-  "top": y - 180,
-  "opacity": 0
-  },
-  1500,
-  function() {
-  $i.remove();
-  });
-  });
-  });
-</script>
 </body>
 </html>
+<script type="text/javascript" src="/js/src/click.js"></script>
