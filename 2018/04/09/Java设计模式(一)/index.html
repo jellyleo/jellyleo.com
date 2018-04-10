@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java,知识点," />
 
 
 
@@ -81,16 +81,20 @@
 
 
 
-<meta name="description" content="山中何事？松花酿酒，春水煎茶。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="咫尺天涯">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="设计模式简介 设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理地运用设计模式可以完美地解决很多问题，每种模式在现实中都有相应的原理来与之对应，每种模式都描述了一个">
+<meta name="keywords" content="Java,知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java设计模式(一)">
+<meta property="og:url" content="http://yoursite.com/2018/04/09/Java设计模式(一)/index.html">
 <meta property="og:site_name" content="咫尺天涯">
-<meta property="og:description" content="山中何事？松花酿酒，春水煎茶。">
+<meta property="og:description" content="设计模式简介 设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理地运用设计模式可以完美地解决很多问题，每种模式在现实中都有相应的原理来与之对应，每种模式都描述了一个">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://s1.ax1x.com/2018/04/10/CF4FyR.jpg">
+<meta property="og:updated_time" content="2018-04-10T09:19:50.055Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="咫尺天涯">
-<meta name="twitter:description" content="山中何事？松花酿酒，春水煎茶。">
+<meta name="twitter:title" content="Java设计模式(一)">
+<meta name="twitter:description" content="设计模式简介 设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理地运用设计模式可以完美地解决很多问题，每种模式在现实中都有相应的原理来与之对应，每种模式都描述了一个">
+<meta name="twitter:image" content="https://s1.ax1x.com/2018/04/10/CF4FyR.jpg">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/09/Java设计模式(一)/"/>
 
 
 
 
 
-  <title>咫尺天涯</title>
+  <title>Java设计模式(一) | 咫尺天涯</title>
   
 
 
@@ -145,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	
 	<a href="https://github.com/jellyleo" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -251,9 +254,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -283,9 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/09/Java设计模式(一)/" itemprop="url">Java设计模式(一)</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java设计模式(一)</h1>
         
 
         <div class="post-meta">
@@ -357,19 +358,18 @@
       
 
       
-        
-          
-          设计模式简介
-设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/09/Java设计模式(一)/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h1 id="设计模式简介"><a href="#设计模式简介" class="headerlink" title="设计模式简介"></a>设计模式简介</h1><blockquote>
+<p>设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理地运用设计模式可以完美地解决很多问题，每种模式在现实中都有相应的原理来与之对应，每种模式都描述了一个在我们周围不断重复发生的问题，以及该问题的核心解决方案，这也是设计模式能被广泛应用的原因。</p>
+</blockquote>
+<h1 id="设计模式分类"><a href="#设计模式分类" class="headerlink" title="设计模式分类"></a>设计模式分类</h1><p>设计模式统共有23种，这23种又分为三大类：创建型模式（Creational Patterns）、结构型模式（Structural Patterns）、行为型模式（Behavioral Patterns），此外，还有J2EE设计模式。</p>
+<p><style><br>table th:first-of-type {<br>    width: 50%;<br>}<br></style><br>| 模式&amp;简述| 包括 |<br>| :——– | :— |<br>| <strong>创建型模式</strong><br>创建对象同时隐藏创建逻辑，而不是使用 new 运算符直接实例化对象，在判断具体实例需要创建哪些对象时更加灵活| 工厂模式（Factory Pattern）<br>抽象工厂模式（Abstract Factory Pattern）<br>单例模式（Singleton Pattern）<br>建造者模式（Builder Pattern）<br>原型模式（Prototype Pattern）|<br>| <strong>结构型模式</strong><br>这些设计模式关注类和对象的组合，继承的概念被用来组合接口和定义组合对象获得新功能的方式。|适配器模式（Adapter Pattern）<br>桥接模式（Bridge Pattern）<br>过滤器模式（Filter、Criteria Pattern）<br>组合模式（Composite Pattern）<br>装饰器模式（Decorator Pattern）<br>外观模式（Facade Pattern）<br>享元模式（Flyweight Pattern）<br>代理模式（Proxy Pattern）|<br>|<strong>行为型模式</strong><br>这些模式特别关注对象之间的通信。|责任链模式（Chain of Responsibility Pattern）<br>命令模式（Command Pattern）<br>解释器模式（Interpreter Pattern）<br>迭代器模式（Iterator Pattern）<br>中介者模式（Mediator Pattern）<br>备忘录模式（Memento Pattern）<br>观察者模式（Observer Pattern）<br>状态模式（State Pattern）<br>空对象模式（Null Object Pattern）<br>策略模式（Strategy Pattern）<br>模板模式（Template Pattern）<br>访问者模式（Visitor Pattern）|<br>|<strong>J2EE模式</strong><br>这些设计模式特别关注表示层。|MVC 模式（MVC Pattern）<br>业务代表模式（Business Delegate Pattern）<br>组合实体模式（Composite Entity Pattern）<br>数据访问对象模式（Data Access Object Pattern）<br>前端控制器模式（Front Controller Pattern）<br>拦截过滤器模式（Intercepting Filter Pattern）<br> 服务定位器模式（Service Locator Pattern）<br>传输对象模式（Transfer Object Pattern）|<br>设计模式关系图：<br><img src="https://s1.ax1x.com/2018/04/10/CF4FyR.jpg" alt="关系图"></p>
+<h1 id="设计模式六大原则"><a href="#设计模式六大原则" class="headerlink" title="设计模式六大原则"></a>设计模式六大原则</h1><h3 id="1、开闭原则（Open-Close-Principle）"><a href="#1、开闭原则（Open-Close-Principle）" class="headerlink" title="1、开闭原则（Open Close Principle）"></a>1、开闭原则（Open Close Principle）</h3><p>开闭原则的意思是：对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，实现一个热插拔的效果。简言之，是为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类。</p>
+<h3 id="2、里氏代换原则（Liskov-Substitution-Principle）"><a href="#2、里氏代换原则（Liskov-Substitution-Principle）" class="headerlink" title="2、里氏代换原则（Liskov Substitution Principle）"></a>2、里氏代换原则（Liskov Substitution Principle）</h3><p>里氏代换原则是面向对象设计的基本原则之一。 里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。LSP 是继承复用的基石，只有当派生类可以替换掉基类，且软件单位的功能不受到影响时，基类才能真正被复用，而派生类也能够在基类的基础上增加新的行为。里氏代换原则是对开闭原则的补充。实现开闭原则的关键步骤就是抽象化，而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。</p>
+<h3 id="3、依赖倒转原则（Dependence-Inversion-Principle）"><a href="#3、依赖倒转原则（Dependence-Inversion-Principle）" class="headerlink" title="3、依赖倒转原则（Dependence Inversion Principle）"></a>3、依赖倒转原则（Dependence Inversion Principle）</h3><p>个原则是开闭原则的基础，具体内容：针对接口编程，依赖于抽象而不依赖于具体。</p>
+<h3 id="4、接口隔离原则（Interface-Segregation-Principle）"><a href="#4、接口隔离原则（Interface-Segregation-Principle）" class="headerlink" title="4、接口隔离原则（Interface Segregation Principle）"></a>4、接口隔离原则（Interface Segregation Principle）</h3><p>这个原则的意思是：使用多个隔离的接口，比使用单个接口要好。它还有另外一个意思是：降低类之间的耦合度。由此可见，其实设计模式就是从大型软件架构出发、便于升级和维护的软件设计思想，它强调降低依赖，降低耦合。</p>
+<h3 id="5、迪米特法则（Demeter-Principle）"><a href="#5、迪米特法则（Demeter-Principle）" class="headerlink" title="5、迪米特法则（Demeter Principle）"></a>5、迪米特法则（Demeter Principle）</h3><p>迪米特法则是指：一个实体应当尽量少地与其他实体之间发生相互作用，使得系统功能模块相对独立。</p>
+<h3 id="6、合成复用原则（Composite-Reuse-Principle）"><a href="#6、合成复用原则（Composite-Reuse-Principle）" class="headerlink" title="6、合成复用原则（Composite Reuse Principle）"></a>6、合成复用原则（Composite Reuse Principle）</h3><p>合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。</p>
+
       
     </div>
     
@@ -377,6 +377,12 @@
     
 
 	<div>
+	  
+	  	<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 <i class="fa fa-smile-o"></i> 感谢您的阅读-------------</div>
+    
+</div>
 	  
 	</div>
 	
@@ -388,183 +394,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/我听说/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jellyleo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://s1.ax1x.com/2018/03/17/95xnoV.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="咫尺天涯">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/17/我听说/" itemprop="url">我听说</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-17T05:52:51+08:00">
-                2018-03-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/美文/" itemprop="url" rel="index">
-                    <span itemprop="name">美文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
-
+            <a href="/tags/知识点/" rel="tag"># 知识点</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://s1.ax1x.com/2018/03/17/95xWY8.jpg" rel="gallery_cjftggqdt000gkofdmtrfwman"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://s1.ax1x.com/2018/03/17/95xWY8.jpg" itemprop="contentUrl"/>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/17/我听说/" rel="next" title="我听说">
+                <i class="fa fa-chevron-left"></i> 我听说
               </a>
             
-          
+          </div>
 
-          
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
           </div>
         </div>
       
 
       
-        
-          
-          　　我听说，有一种猫叫做雨猫。天气温暖时，它就变得蓬松毛绒绒的，像白云一样上浮，你可以拴着它，像放风筝一样走，它会变透明，阳光透得过它的身体。天气晦暗时它会变黑，坠在地上，满地乱跑，毛变得硬硬的，像刚刮过的胡茬一样。你得抱着它，等天气晴朗时，再把它放出去，就像风筝末梢放着一团棉花糖。
-　　我听说，有
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/17/我听说/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -574,165 +435,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/16/markdown常用语法(一)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jellyleo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://s1.ax1x.com/2018/03/17/95xnoV.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="咫尺天涯">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/16/markdown常用语法(一)/" itemprop="url">Markdown 常用语法(一)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-16T02:56:30+08:00">
-                2018-03-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Markdown
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    ——  [ 维基百科 ]
-
-修辞和强调Markdown 使用星号和底线来标记需要强调的区段。Some of these words are emphasiz
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/16/markdown常用语法(一)/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -740,6 +447,10 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
 
           
+
+  
+
+
 
         </div>
         
@@ -760,8 +471,17 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -872,6 +592,22 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式简介"><span class="nav-number">1.</span> <span class="nav-text">设计模式简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式分类"><span class="nav-number">2.</span> <span class="nav-text">设计模式分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式六大原则"><span class="nav-number">3.</span> <span class="nav-text">设计模式六大原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、开闭原则（Open-Close-Principle）"><span class="nav-number">3.0.1.</span> <span class="nav-text">1、开闭原则（Open Close Principle）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、里氏代换原则（Liskov-Substitution-Principle）"><span class="nav-number">3.0.2.</span> <span class="nav-text">2、里氏代换原则（Liskov Substitution Principle）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、依赖倒转原则（Dependence-Inversion-Principle）"><span class="nav-number">3.0.3.</span> <span class="nav-text">3、依赖倒转原则（Dependence Inversion Principle）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、接口隔离原则（Interface-Segregation-Principle）"><span class="nav-number">3.0.4.</span> <span class="nav-text">4、接口隔离原则（Interface Segregation Principle）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、迪米特法则（Demeter-Principle）"><span class="nav-number">3.0.5.</span> <span class="nav-text">5、迪米特法则（Demeter Principle）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、合成复用原则（Composite-Reuse-Principle）"><span class="nav-number">3.0.6.</span> <span class="nav-text">6、合成复用原则（Composite Reuse Principle）</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1025,6 +761,10 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
