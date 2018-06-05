@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Jarvis">
 <meta property="og:description" content="SQL DML 和 DDL可以把 SQL 分为两个部分：数据操作语言 (DML) 和 数据定义语言 (DDL)。SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也包含用于更新、插入和删除记录的语法。 查询和更新指令构成了 SQL 的 DML 部分：  SELECT - 从数据库表中获取数据 UPDATE - 更新数据库表中的数据 DELETE - 从数据库表中删除数据 INSER">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-05T12:09:03.493Z">
+<meta property="og:updated_time" content="2018-06-05T12:14:11.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用SQL语句">
 <meta name="twitter:description" content="SQL DML 和 DDL可以把 SQL 分为两个部分：数据操作语言 (DML) 和 数据定义语言 (DDL)。SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也包含用于更新、插入和删除记录的语法。 查询和更新指令构成了 SQL 的 DML 部分：  SELECT - 从数据库表中获取数据 UPDATE - 更新数据库表中的数据 DELETE - 从数据库表中删除数据 INSER">
@@ -423,15 +423,15 @@ select * from book inner join bookType on book.bookTypeId=bookType.id;
 </code></pre><p>查询某几个字段</p>
 <pre><code>select bookNme,author from book,bookType where book.bookTypeId=bookType.id;
 </code></pre><p>外连接查询：两张或以上的表连接起来查询某张表的信息<br>左连接：用left join 或 left outer join，包含左表所有行，如果左表中某行在右表没有匹配，则结果中对应行右表的部分全部为空(NULL)</p>
-<pre><code>select * from t_book left join bookType on book.bookTypeId=bookType.id;
+<pre><code>select * from book left join bookType on book.bookTypeId=bookType.id;
 </code></pre><p>右连接：right join 或 right outer join，包含右表所有行，如果左表中某行在右表没有匹配，则结果中对应左表的部分全部为空(NULL)</p>
-<pre><code>select * from t_book right join bookType on book.bookTypeId=bookType.id;
+<pre><code>select * from book right join bookType on book.bookTypeId=bookType.id;
 </code></pre><p>完全外连接：full join 或 full outer join，包含full join左右两表中所有的行，如果右表中某行在左表中没有匹配，则结果中对应行右表的部分全部为空(NULL)，如果左表中某行在右表中没有匹配，则结果中对应行左表的部分全部为空(NULL)</p>
-<pre><code>select * from t_book full join bookType on book.bookTypeId=bookType.id;
+<pre><code>select * from book full join bookType on book.bookTypeId=bookType.id;
 </code></pre><p>交叉连接：cross join，没有 WHERE 子句的交叉联接将产生连接所涉及的表的笛卡尔积。第一个表的行数乘以第二个表的行数等于笛卡尔积结果集的大小</p>
-<pre><code>select * from t_book cross join bookType
+<pre><code>select * from book cross join bookType
 </code></pre><p>如果我们在此时给这条SQL加上WHERE子句的时候比如SQL：</p>
-<pre><code>select * from t_book cross join bookType where book.bookTypeId=bookType.id;
+<pre><code>select * from book cross join bookType where book.bookTypeId=bookType.id;
 </code></pre><p>此时将返回符合条件的结果集，结果和inner join所示执行结果一样。</p>
 <p>当两表为多对多的时候<br>表student</p>
 <table>
